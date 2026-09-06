@@ -8,84 +8,53 @@ if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-// We use inline SVGs and stylized text to represent the monochrome partner logos
+// Text-based stylized partner names (generic placeholders)
 const partners = [
   {
-    name: 'BP',
+    name: 'ADNOC',
     logo: (
       <div className="flex flex-col items-center justify-center gap-1 opacity-70 hover:opacity-100 transition-opacity duration-300">
-        <span className="text-[10px] font-bold leading-none">bp</span>
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 0L22.5 12.5L35 5L27.5 17.5L40 20L27.5 22.5L35 35L22.5 27.5L20 40L17.5 27.5L5 35L12.5 22.5L0 20L12.5 17.5L5 5L17.5 12.5L20 0Z" />
-        </svg>
+        <span className="text-xl font-black tracking-tight leading-none">ADNOC</span>
       </div>
     )
   },
   {
-    name: 'TotalEnergies',
+    name: 'Qatar Petroleum',
     logo: (
       <div className="flex flex-col items-center justify-center gap-1 opacity-70 hover:opacity-100 transition-opacity duration-300">
-        <svg width="50" height="30" viewBox="0 0 50 30" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10 15C10 15 20 5 30 15C40 25 45 15 45 15" />
-          <path d="M5 5H25" />
-        </svg>
-        <span className="text-[9px] font-bold tracking-wider">TotalEnergies</span>
+        <span className="text-lg font-bold tracking-wide leading-none">Qatar Petroleum</span>
       </div>
     )
   },
   {
-    name: 'Shell',
+    name: 'Saudi Aramco',
     logo: (
       <div className="flex flex-col items-center justify-center gap-1 opacity-70 hover:opacity-100 transition-opacity duration-300">
-        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18 34C18 34 32 30 32 18C32 8 26 2 18 2C10 2 4 8 4 18C4 30 18 34 18 34Z" />
-          <path d="M18 34V18" />
-          <path d="M18 34C18 34 26 30 26 18C26 12 22 6 18 2" />
-          <path d="M18 34C18 34 10 30 10 18C10 12 14 6 18 2" />
-        </svg>
-        <span className="text-[10px] font-bold tracking-widest uppercase">Shell</span>
+        <span className="text-lg font-bold tracking-wide leading-none">Saudi Aramco</span>
       </div>
     )
   },
   {
-    name: 'Vitel',
-    logo: (
-      <div className="flex flex-col items-end justify-center opacity-70 hover:opacity-100 transition-opacity duration-300">
-        <span className="text-2xl font-black tracking-tighter leading-none">VITEL</span>
-        <span className="text-[10px] font-medium tracking-widest leading-none mt-1">energía</span>
-      </div>
-    )
-  },
-  {
-    name: 'ExxonMobil',
-    logo: (
-      <div className="flex flex-col items-center justify-center opacity-70 hover:opacity-100 transition-opacity duration-300">
-        <span className="text-xl font-bold tracking-tight leading-none">ExxonMobil</span>
-        <span className="text-[11px] font-serif italic tracking-wide leading-none mt-1 ml-12">Chemical</span>
-      </div>
-    )
-  },
-  {
-    name: 'Pertamina',
-    logo: (
-      <div className="flex items-center justify-center gap-2 opacity-70 hover:opacity-100 transition-opacity duration-300">
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M15 0L30 15L15 30L0 15L15 0Z" />
-          <path d="M15 5L25 15L15 25L5 15L15 5Z" fill="#3B4462" />
-        </svg>
-        <span className="text-sm font-bold tracking-widest uppercase mt-1">Pertamina</span>
-      </div>
-    )
-  },
-  {
-    name: 'Chevron',
+    name: 'Kuwait Petroleum',
     logo: (
       <div className="flex flex-col items-center justify-center gap-1 opacity-70 hover:opacity-100 transition-opacity duration-300">
-        <span className="text-[11px] font-bold tracking-widest uppercase">Chevron</span>
-        <svg width="36" height="32" viewBox="0 0 36 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18 12L36 0V8L18 20L0 8V0L18 12Z" />
-          <path d="M18 24L36 12V20L18 32L0 20V12L18 24Z" />
-        </svg>
+        <span className="text-lg font-bold tracking-wide leading-none">Kuwait Petroleum</span>
+      </div>
+    )
+  },
+  {
+    name: 'Oman Oil',
+    logo: (
+      <div className="flex flex-col items-center justify-center gap-1 opacity-70 hover:opacity-100 transition-opacity duration-300">
+        <span className="text-xl font-black tracking-tight leading-none">Oman Oil</span>
+      </div>
+    )
+  },
+  {
+    name: 'Abu Dhabi NOC',
+    logo: (
+      <div className="flex flex-col items-center justify-center gap-1 opacity-70 hover:opacity-100 transition-opacity duration-300">
+        <span className="text-lg font-bold tracking-wide leading-none">Abu Dhabi NOC</span>
       </div>
     )
   }
@@ -144,7 +113,7 @@ export default function TrustedPartners() {
         {/* Header */}
         <div ref={headerRef} className="text-center">
           <h2 className="text-4xl md:text-5xl font-medium text-white tracking-tight leading-tight">
-            Trusted by<br />Global Energy Leaders
+            Trusted by<br />Global Commodity Partners
           </h2>
         </div>
       </div>
