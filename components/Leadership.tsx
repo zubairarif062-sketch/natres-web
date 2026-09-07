@@ -14,7 +14,7 @@ const teamMembers = [
     name: 'Sheikh Mohammad Bin Naseer Al Thani',
     role: 'CHIEF EXECUTIVE OFFICER',
     description: 'Leads NATRES from its Qatar headquarters, driving the firm\'s strategic vision and growth across global commodity markets.',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop', // Placeholder professional man
+    image: '/projectPhotos/Sheiikh-naseer.jpg', // Placeholder — replace with real photo later
     linkedin: '#',
     twitter: '#'
   },
@@ -22,7 +22,7 @@ const teamMembers = [
     name: 'Kashif Raza',
     role: 'DIRECTOR, SALES & OPERATIONS',
     description: 'Oversees sales and operations, aligning NATRES\' trading strategy across its Qatar, London and Shanghai offices.',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop', // Professional man
+    image: '/projectPhotos/kashif-raza.jpg',
     linkedin: '#',
     twitter: '#'
   },
@@ -30,7 +30,15 @@ const teamMembers = [
     name: 'Nauman Sulehri',
     role: 'GENERAL MANAGER, FINANCE',
     description: 'Leads group finance, ensuring compliant and efficient financial operations across all NATRES regions.',
-    image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=800&auto=format&fit=crop', // Professional man
+    image: '/projectPhotos/nouman-sulehri.jpg',
+    linkedin: '#',
+    twitter: '#'
+  },
+  {
+    name: 'Michael Smith',
+    role: 'FINANCE MANAGER',
+    description: 'Supports NATRES\' finance function, ensuring accuracy and compliance across day-to-day financial operations.',
+    image: '/projectPhotos/michael-smith.jpg',
     linkedin: '#',
     twitter: '#'
   },
@@ -38,7 +46,7 @@ const teamMembers = [
     name: 'Leon Hendrikz',
     role: 'REGIONAL MANAGER, AFRICA',
     description: 'Based in Johannesburg, Leon leads NATRES\' growth strategy and partnerships across the African market.',
-    image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=800&auto=format&fit=crop', // Professional man
+    image: '/projectPhotos/leon-hendrikz.jpg',
     linkedin: '#',
     twitter: '#'
   }

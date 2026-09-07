@@ -23,7 +23,7 @@ export default function AboutMissionVision() {
       // Header Animation
       gsap.fromTo(headerRef.current?.children ? Array.from(headerRef.current.children) : [],
         { y: 30, opacity: 0 },
-        { 
+        {
           y: 0, opacity: 1, duration: 0.8, stagger: 0.2, ease: 'power3.out',
           scrollTrigger: {
             trigger: headerRef.current,
@@ -36,18 +36,18 @@ export default function AboutMissionVision() {
       if (missionRef.current) {
         const missionText = missionRef.current.querySelector('.text-content');
         const missionImg = missionRef.current.querySelector('.img-content');
-        
+
         gsap.fromTo(missionText?.children ? Array.from(missionText.children) : [],
           { y: 30, opacity: 0 },
-          { 
+          {
             y: 0, opacity: 1, duration: 0.8, stagger: 0.15, ease: 'power3.out',
             scrollTrigger: { trigger: missionRef.current, start: 'top 75%' }
           }
         );
-        
+
         gsap.fromTo(missionImg,
           { x: 30, opacity: 0 },
-          { 
+          {
             x: 0, opacity: 1, duration: 1, ease: 'power3.out',
             scrollTrigger: { trigger: missionRef.current, start: 'top 75%' }
           }
@@ -57,7 +57,7 @@ export default function AboutMissionVision() {
       // Divider Animation
       gsap.fromTo(dividerRef.current,
         { scaleX: 0, opacity: 0 },
-        { 
+        {
           scaleX: 1, opacity: 1, duration: 1, ease: 'power3.inOut', transformOrigin: 'left center',
           scrollTrigger: { trigger: dividerRef.current, start: 'top 85%' }
         }
@@ -67,18 +67,18 @@ export default function AboutMissionVision() {
       if (visionRef.current) {
         const visionText = visionRef.current.querySelector('.text-content');
         const visionImg = visionRef.current.querySelector('.img-content');
-        
+
         gsap.fromTo(visionText?.children ? Array.from(visionText.children) : [],
           { y: 30, opacity: 0 },
-          { 
+          {
             y: 0, opacity: 1, duration: 0.8, stagger: 0.15, ease: 'power3.out',
             scrollTrigger: { trigger: visionRef.current, start: 'top 75%' }
           }
         );
-        
+
         gsap.fromTo(visionImg,
           { x: 30, opacity: 0 },
-          { 
+          {
             x: 0, opacity: 1, duration: 1, ease: 'power3.out',
             scrollTrigger: { trigger: visionRef.current, start: 'top 75%' }
           }
@@ -92,7 +92,7 @@ export default function AboutMissionVision() {
   return (
     <section ref={sectionRef} className="py-24 md:py-32 bg-[#F7F8FA]">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-24">
-        
+
         {/* Header */}
         <div ref={headerRef} className="mb-20 md:mb-28 max-w-5xl">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-dark tracking-tight mb-6">
@@ -112,7 +112,7 @@ export default function AboutMissionVision() {
             <p className="text-brand-dark/75 text-lg leading-relaxed mb-8 max-w-xl">
               We exist to power global commodity trade through trust, efficiency, and compliance. By specializing in a carefully selected set of commodities and the infrastructure that moves them, we aim to be the most reliable and forward-thinking partner in oil, gas, coal, and logistics.
             </p>
-            <Link 
+            <Link
               href="/contact"
               className="inline-flex items-center gap-2 bg-[#2B3A55] hover:bg-[#1E293B] text-white px-8 py-3.5 rounded-full text-[15px] font-medium transition-all duration-300 shadow-lg hover:shadow-xl group"
             >
@@ -121,8 +121,8 @@ export default function AboutMissionVision() {
             </Link>
           </div>
           <div className="img-content order-1 lg:order-2 relative h-[350px] md:h-[450px] w-full rounded-2xl overflow-hidden shadow-2xl">
-            <Image 
-              src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=1400&auto=format&fit=crop"
+            <Image
+              src="/projectPhotos/london-hammersmith-office.jpg"
               alt="Silhouette of worker at industrial facility during sunset"
               fill
               className="object-cover"
@@ -142,7 +142,7 @@ export default function AboutMissionVision() {
             <p className="text-brand-dark/75 text-lg leading-relaxed mb-8 max-w-xl">
               To lead the global movement of high-demand commodities and infrastructure by building a trusted ecosystem of compliant, cross-border trade—expanding into new markets while empowering the economies we serve.
             </p>
-            <Link 
+            <Link
               href="/contact"
               className="inline-flex items-center gap-2 bg-brand-accent hover:bg-[#E04D1E] text-white px-8 py-3.5 rounded-full text-[15px] font-medium transition-all duration-300 shadow-[0_4px_14px_rgba(250,93,43,0.25)] hover:shadow-[0_6px_20px_rgba(250,93,43,0.35)] group"
             >
@@ -151,8 +151,8 @@ export default function AboutMissionVision() {
             </Link>
           </div>
           <div className="img-content order-1 lg:order-2 relative h-[350px] md:h-[450px] w-full rounded-2xl overflow-hidden shadow-2xl">
-            <Image 
-              src="https://images.unsplash.com/photo-1615678815958-5910c6811c25?q=80&w=1400&auto=format&fit=crop"
+            <Image
+              src="/projectPhotos/london-city-tower-bridge.jpg"
               alt="Oil pump jack at night under starry sky"
               fill
               className="object-cover"

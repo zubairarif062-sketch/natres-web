@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import gsap from 'gsap';
 import { Menu, X } from 'lucide-react';
@@ -88,13 +89,10 @@ export default function Navbar() {
           {/* Logo */}
           <Link ref={logoRef} href="/" className="flex items-center gap-3 group z-50" onClick={() => setIsMobileMenuOpen(false)}>
             <div className="flex flex-col gap-1">
-              <div className="w-7 h-1.5 bg-brand-accent rounded-full transition-transform group-hover:scale-105 origin-left"></div>
-              <div className="w-7 h-1.5 bg-brand-primary rounded-full transition-transform group-hover:scale-105 origin-left delay-75"></div>
-              <div className="w-7 h-1.5 bg-brand-accent rounded-full transition-transform group-hover:scale-105 origin-left delay-150"></div>
+                          <Image src="/natres-logo.png" alt="NATRES Logo" width={40} height={40} className="object-contain" />
             </div>
             <div className="flex flex-col leading-none mt-0.5">
               <span className={`font-bold tracking-wider uppercase transition-all duration-300 ${isScrolled ? 'text-base md:text-lg' : 'text-lg md:text-xl'}`}>NATRES</span>
-              <span className={`font-light tracking-[0.35em] uppercase mt-1 transition-all duration-300 ${isScrolled ? 'text-[9px] md:text-[10px]' : 'text-[10px] md:text-xs'}`}>Commodity Trading</span>
             </div>
           </Link>
 

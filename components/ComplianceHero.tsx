@@ -27,7 +27,7 @@ export default function ComplianceHero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image 
-          src="https://i.ibb.co/6c2Tpwc1/Holstein-at-Dusk.jpg"
+          src="/projectPhotos/london-chiswick-business-park.jpg"
           alt="Industrial facility at dusk"
           fill
           priority

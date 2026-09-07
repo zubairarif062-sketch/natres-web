@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { MapPin, Phone, Mail, ArrowRight, Facebook, Linkedin, Youtube } from 'lucide-react';
 
 export default function Footer() {
@@ -9,29 +10,24 @@ export default function Footer() {
     <footer className="bg-brand-secondary text-white border-t border-white/10">
       <div className="max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12">
-          
+
           {/* Column 1: Logo & Contact */}
           <div className="lg:col-span-4 border-b lg:border-b-0 lg:border-r border-white/10 flex flex-col">
             {/* Logo Section */}
             <div className="p-8 lg:p-12 border-b border-white/10">
               <Link href="/" className="flex items-center gap-3 group inline-flex">
-                <div className="flex flex-col gap-1">
-                  <div className="w-7 h-1.5 bg-brand-accent rounded-full transition-transform group-hover:scale-105 origin-left"></div>
-                  <div className="w-7 h-1.5 bg-brand-primary rounded-full transition-transform group-hover:scale-105 origin-left delay-75"></div>
-                  <div className="w-7 h-1.5 bg-brand-accent rounded-full transition-transform group-hover:scale-105 origin-left delay-150"></div>
-                </div>
+                                <Image src="/natres-logo.png" alt="NATRES Logo" width={40} height={40} className="object-contain" />
                 <div className="flex flex-col leading-none mt-0.5">
                   <span className="text-lg md:text-xl font-bold tracking-wider uppercase">NATRES</span>
-                  <span className="text-[10px] md:text-xs font-light tracking-[0.35em] uppercase mt-1">Commodity Trading</span>
                 </div>
               </Link>
             </div>
-            
+
             {/* Contact Section */}
             <div className="p-8 lg:p-12 flex-grow flex flex-col gap-6 text-[15px] text-gray-300">
               <div className="flex items-start gap-4">
                 <MapPin className="w-5 h-5 text-white shrink-0 mt-0.5" />
-                <p className="leading-relaxed">Doha, Qatar.</p>
+                <p className="leading-relaxed">London, UK.</p>
               </div>
               <div className="flex items-center gap-4">
                 <Phone className="w-5 h-5 text-white shrink-0" />
@@ -59,7 +55,7 @@ export default function Footer() {
 
           {/* Column 3: CTA & Footer Bottom */}
           <div className="lg:col-span-5 p-8 lg:p-12 flex flex-col justify-between">
-            
+
             {/* Top CTA */}
             <div className="mb-16 lg:mb-24">
               <h3 className="text-3xl md:text-4xl font-medium tracking-tight leading-tight mb-8">
@@ -67,7 +63,7 @@ export default function Footer() {
                 trade or expand into new <br className="hidden md:block" />
                 markets?
               </h3>
-              <Link 
+              <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 bg-brand-accent hover:bg-[#E04D1E] text-white px-8 py-3.5 rounded-lg text-[15px] font-medium transition-all duration-300 shadow-[0_4px_14px_rgba(250,93,43,0.25)] hover:shadow-[0_6px_20px_rgba(250,93,43,0.35)] group"
               >

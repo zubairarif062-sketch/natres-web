@@ -150,7 +150,7 @@ export default function Contact({
         {/* Right Column - Image */}
         <div ref={imageRef} className="relative h-[500px] lg:h-auto w-full overflow-hidden">
           <Image 
-            src="https://i.ibb.co/fz00HHp1/offshore-platform.jpg" 
+            src="/projectPhotos/crude-oil-tanker.jpg" 
             alt="Industrial facility"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"

@@ -51,7 +51,7 @@ export default function AboutHero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://i.ibb.co/qLMmR9Bq/pwc-gx-supporting-1600x900-gettyimages-1499124310.jpg"
+           src="/projectPhotos/qatar-doha-skyline-2.jpg"
           alt="Cargo ship at sea"
           fill
           className="object-cover object-center"

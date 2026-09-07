@@ -39,7 +39,7 @@ export default function Hero() {
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transform scale-105 animate-slow-pan"
         style={{ 
-          backgroundImage: 'url("https://i.ibb.co/fL6KbWc/Oil-1.webp")',
+backgroundImage: 'url("/projectPhotos/qatar-doha-skyline-1.jpg")',
           backgroundPosition: 'center 60%'
         }}
       />
