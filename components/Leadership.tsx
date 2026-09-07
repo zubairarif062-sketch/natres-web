@@ -11,7 +11,7 @@ if (typeof window !== 'undefined') {
 
 const teamMembers = [
   {
-    name: 'Sheikh Mohammad Bin Naseer Al Thani',
+    name: 'Sheikh Nasser Bin Mohammad Bin Jabor Al-Thani',
     role: 'CHIEF EXECUTIVE OFFICER',
     description: 'Leads NATRES from its Qatar headquarters, driving the firm\'s strategic vision and growth across global commodity markets.',
     image: '/projectPhotos/Sheiikh-naseer.jpg', // Placeholder — replace with real photo later
