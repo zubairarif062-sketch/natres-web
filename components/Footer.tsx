@@ -16,7 +16,7 @@ export default function Footer() {
             {/* Logo Section */}
             <div className="p-8 lg:p-12 border-b border-white/10">
               <Link href="/" className="flex items-center gap-3 group inline-flex">
-                                <Image src="/natres-logo.png" alt="NATRES Logo" width={40} height={40} className="object-contain" />
+                <Image src="/natres-logo.png" alt="NATRES Logo" width={40} height={40} className="object-contain" />
                 <div className="flex flex-col leading-none mt-0.5">
                   <span className="text-lg md:text-xl font-bold tracking-wider uppercase">NATRES</span>
                 </div>
@@ -27,7 +27,7 @@ export default function Footer() {
             <div className="p-8 lg:p-12 flex-grow flex flex-col gap-6 text-[15px] text-gray-300">
               <div className="flex items-start gap-4">
                 <MapPin className="w-5 h-5 text-white shrink-0 mt-0.5" />
-                <p className="leading-relaxed">London, UK.</p>
+                <p className="leading-relaxed">82 King Street, Manchester, M2 4WQ, United Kingdom</p>
               </div>
               <div className="flex items-center gap-4">
                 <Phone className="w-5 h-5 text-white shrink-0" />
