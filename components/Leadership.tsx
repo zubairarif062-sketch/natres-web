@@ -13,8 +13,9 @@ const teamMembers = [
   {
     name: 'Sheikh Nasser Bin Mohammad Bin Jabor Al-Thani',
     role: 'CHIEF EXECUTIVE OFFICER',
+    extraTitle: 'CEO of ZAD Holding (The State of Qatar)',
     description: 'Leads NATRES from its Qatar headquarters, driving the firm\'s strategic vision and growth across global commodity markets.',
-    image: '/projectPhotos/Sheiikh-naseer.jpg', // Placeholder — replace with real photo later
+    image: '/projectPhotos/Sheiikh-naseer.jpg',
     linkedin: '#',
     twitter: '#'
   },
@@ -116,12 +117,12 @@ export default function Leadership() {
                 />
               </div>
 
-              {/* Content */}
+             {/* Content */}
               <div className="p-8 text-center flex flex-col items-center">
                 <h3 className="text-2xl font-bold text-brand-dark mb-1">{member.name}</h3>
-                {member.name === 'Sheikh Mohammad Bin Naseer Al Thani' && (
+                {member.extraTitle && (
                   <p className="text-sm font-semibold text-brand-accent mb-1">
-                    CEO of ZAD Holding (The State of Qatar)
+                    {member.extraTitle}
                   </p>
                 )}
                 <p className="text-xs font-medium tracking-widest text-brand-secondary/80 uppercase mb-4">
