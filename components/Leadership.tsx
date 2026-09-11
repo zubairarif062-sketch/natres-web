@@ -36,7 +36,7 @@ const teamMembers = [
   },
   {
     name: 'Michael Smith',
-    role: 'FINANCE MANAGER',
+    role: 'LEAD STRATEGIST',
     description: 'Supports NATRES\' finance function, ensuring accuracy and compliance across day-to-day financial operations.',
     image: '/projectPhotos/michael-smith.jpg',
     linkedin: '#',
@@ -62,7 +62,7 @@ export default function Leadership() {
       // Header animation
       gsap.fromTo(headerRef.current?.children ? Array.from(headerRef.current.children) : [],
         { y: 30, opacity: 0 },
-        { 
+        {
           y: 0, opacity: 1, duration: 0.8, stagger: 0.2,
           scrollTrigger: {
             trigger: headerRef.current,
@@ -74,7 +74,7 @@ export default function Leadership() {
       // Cards animation
       gsap.fromTo(cardsRef.current?.children ? Array.from(cardsRef.current.children) : [],
         { y: 50, opacity: 0 },
-        { 
+        {
           y: 0, opacity: 1, duration: 0.8, stagger: 0.2, ease: 'power3.out',
           scrollTrigger: {
             trigger: cardsRef.current,
@@ -90,7 +90,7 @@ export default function Leadership() {
   return (
     <section ref={sectionRef} className="py-24 md:py-32 bg-[#FAFAFA]">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-        
+
         {/* Header */}
         <div ref={headerRef} className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-medium text-brand-dark tracking-tight leading-tight">
@@ -102,10 +102,10 @@ export default function Leadership() {
         <div ref={cardsRef} className="flex flex-wrap justify-center gap-8 md:gap-12">
           {teamMembers.map((member, index) => (
             <div key={index} className="w-full max-w-[400px] bg-white rounded-2xl overflow-hidden shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.15)] transition-shadow duration-500 group">
-              
+
               {/* Image Container */}
               <div className="relative h-[400px] w-full overflow-hidden">
-                <Image 
+                <Image
                   src={member.image}
                   alt={member.name}
                   fill
@@ -119,6 +119,11 @@ export default function Leadership() {
               {/* Content */}
               <div className="p-8 text-center flex flex-col items-center">
                 <h3 className="text-2xl font-bold text-brand-dark mb-1">{member.name}</h3>
+                {member.name === 'Sheikh Mohammad Bin Naseer Al Thani' && (
+                  <p className="text-sm font-semibold text-brand-accent mb-1">
+                    CEO of ZAD Holding (The State of Qatar)
+                  </p>
+                )}
                 <p className="text-xs font-medium tracking-widest text-brand-secondary/80 uppercase mb-4">
                   {member.role}
                 </p>
